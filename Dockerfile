@@ -1,4 +1,4 @@
-FROM dclong/jupyterhub-beakerx:18.10
+FROM dclong/jupyterhub-beakerx
 
 RUN npm install -g --unsafe-perm itypescript \
     && its --ts-hide-undefined --ts-install=global
