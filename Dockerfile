@@ -1,7 +1,7 @@
 FROM dclong/jupyterhub-beakerx
 
 RUN npm install -g --unsafe-perm itypescript \
-    && its --ts-hide-undefined --ts-install=global
+    && its --ts-hide-undefined --install=global
 
 RUN apt-get update -y \
     && apt-get install -y \
